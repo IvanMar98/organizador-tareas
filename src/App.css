@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+  background-color: #1b1b1b;
+  font-family: Roboto, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.contenedor-title{
+  padding-top: 30px;
+}
+.title{
+  font-size: 2.5em;
+  font-weight: bold;
   color: white;
+  text-shadow: 10px 9px 5px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.contenedor-lista-tareas{
+  width: 600px;
+  min-height: 300px;
+  border-radius: 20px;
+  background-color: #d0d0d5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tareas-title{
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
 }
